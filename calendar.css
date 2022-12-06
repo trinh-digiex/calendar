@@ -97,7 +97,7 @@ td {
     height: 1.6em;
     text-align: center;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: lightcyan;
     cursor: pointer;
     transition: all ease 0.4s;
