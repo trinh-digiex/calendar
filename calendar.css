@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Display */
+.calendar-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 700px);
+    flex-direction: column;
+}
+
+.date {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.full-date {
+    background-color: #4deb72;
+    width: calc(100% - 40px);
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.date-number {
+    font-size: 68px;
+    font-weight: 600;
+}
+
+.week-day {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration:underline;
+}
+
+.show-calendar {
+    height: 200px;
+    width: calc(100% - 10px);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+/* Table */
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.activeDate {
+    background-color: aquamarine;
+}
+
+
+.dayOfWeek {
+    background-color: #ede69f;
+}
+
+/* Controller */
+.controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.button {
+    margin: 0 6px;
+    width: 3em;
+    height: 1.6em;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    background-color: lightcyan;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.button:hover {
+    background-color: rgb(28, 174, 207);
+    color: aliceblue;
+}
+
+.year-input {
+    width: 50px;
+}

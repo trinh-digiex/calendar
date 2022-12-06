@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calendar</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="calendar-container">
+          <div class="date">
+            <div class="full-date"></div>
+            <div class="date-number"></div>
+            <div class="week-day"></div>
+          </div>
+          <div class="show-calendar">
+            <table class="table-calendar">
+                <thead class="head-table"></thead>
+                <tbody class="body-table"></tbody>
+            </table>
+          </div>
+          <div class="controller">
+            <button class="back-year button" onclick="clickBackYear()"> << </button>
+            <button class="back-month button" onclick="clickBackMonth()"> < </button>
+            <select class="select-day">
+            </select>
+            <div style="margin-right: 4px; margin-left: 4px"> / </div>
+            <select class="select-month" onchange="changeMonth()">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="7">8</option>
+                <option value="8">9</option>
+                <option value="9">10</option>
+                <option value="10">11</option>
+                <option value="11">12</option>
+            </select>
+            <div style="margin-right: 4px; margin-left: 4px"> / </div>
+          <input class="year-input" type="number" onclick="onblurYearInput()" />
+            <button class="ok button" onclick="clickOk()">OK</button>
+            <button class="next-month button" onclick="clickNextMonth()"> > </button>
+            <button class="next-year button" onclick="clickNextYear()"> >> </button>
+          </div>
+        </div>
+    </div class="container">
+    <script src="calendar.js"></script>
+  </calendarCody>
+</html>
+
